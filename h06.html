@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+</head>
+<body>
+    <h1>Tabeli vormimine</h1>
+    <form action="#">
+    <table>
+        <tr>
+            <td>Kasutajanimi:</td>
+            <td><input type="text" maxlenght="6" placeholder="max 6" ></td>
+        </tr>
+        <tr>
+            <td>Kursus:</td>
+            <td><input type="text" maxlenght="3" placeholder="max 3" ></td>
+        </tr>
+        <tr>
+            <td>Osakonna nr:</td>
+            <td><input type="number" min="1" max="3"></td>
+        </tr>
+        <tr>
+            <td>Parool:</td>
+            <td><input type="password" ></td>
+        </tr>
+        <tr>
+            <td>Vali teenus:</td>
+            <td>
+                <select> name="teenus" id="teenus"
+                    <option value="">Odav</option>
+                    <option value="">Keskmine</option>
+                    <option value="">Kallis</option>
+
+                </select>
+            
+            </td>
+        </tr>
+        <tr>
+            <td>Roll:</td>
+            <td>
+                <input type="radio" name="roll">admin <br>
+                <input type="radio" name="roll">mode <br>
+                <input type="radio" name="roll">user <br>
+        </tr>        
+            
+            </td>
+        <tr>
+            <td>Nõustun tingimustega:</td>
+            <td>
+                <input type="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <td>Enesetutvustus:</td>
+            <td>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                
+        </tr>   
+
+        <tr>
+            <td><input type="reset" value="Tühjendaväljad">:</td>
+            <td><input type="submit" value="Saada"></td>
+                
+        </tr>        
+
+
+    </table>
+    </form>
+    
+</body>
+</html>

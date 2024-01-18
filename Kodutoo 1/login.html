@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Siim Silvet">
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><strong>Siimu veebileht</strong></h1>
+            <div>
+            <img src="https://picsum.photos/id/686/1200/300" alt="Banneri pilt">
+            </div>
+            <hr>
+                <div class="navigeerimis menuu">
+                    <ul>
+                        <li><a href="index.html">Avaleht</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="teenused.html">Teenused</a></li>
+                    </ul>
+                </div>
+            <hr>
+
+        </div>
+
+    </div>
+    <h1><strong>Login</strong></h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="username">Kasutaja:</label></td>
+                <td><input type="text" id="username" name="username" placeholder="Sisesta kasutajanimi" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Parool:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" id="remember" name="remember"><label for="remember">Pea mind meeles</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Logi sisse"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

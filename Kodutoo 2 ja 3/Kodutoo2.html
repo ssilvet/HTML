@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kodutoo2ja3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+  /* Peida otsingukast vaikimisi */
+.search-box {
+  display: none;
+}
+
+/* Stiilide määratlemine otsingukastile */
+.search-box input[type="text"] {
+  width: 200px;
+  padding: 5px;
+}
+
+  </style>
+
+    </head>
+  <body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+          <div class="col-md-4 d-flex align-items-center"> 
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+            </svg></a><span>sinu@nimi.ee</span></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+            </svg></a><span>+372555656</span></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+              </svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg></a></li>  
+              <li class="ms-3">
+                <a id="searchIcon" class="text-body-secondary" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+              <div id="searchBox" class="search-box">
+                <input type="text" placeholder="Sisesta otsingusõna">
+              </div>
+              </li>
+          </ul>
+        </header>
+      </div>
+    
+    <div class="container ">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 ">
+          <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <h1><strong>Siim Silvet</strong></h1>
+    </div>
+    
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="Kodutoo2.html">Avaleht</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tooted</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Teenused.php">Teenused</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link active btn btn-primary text-white" aria-current="page">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+      </div>
+
+      <div class="container col-xxl-8 py-3 mb-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <div>
+                <h1><b>Proovin tõestada, et </b></h1>
+                <h1><b>oskan Bootstrappi</b></h1>
+                <p>Tegelikult oskan täiega HTML, CSS ja Bootstrap APit.</p>
+                <p>Kahjuks olen liiga laisk!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <img src="bs1man.jpg" alt="pilt" class="img-fluid justify-content-center">
+          </div>
+        </div>
+      </div>
+      
+      <div class="container px-3 py-3" >
+        <h1 class="pb-2 row justify-content-center ">Meie teenused</h1>
+        <p class="text-center">Otsingu luubil saan klikkida ja kuvatakse hüpikmenüüna otsingukast</p>
+        <div class="row py-5 row-cols-1 row-cols-lg-3">
+
+          <div class="feature col border p-3 " >
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="red" class="bi bi-currency-euro" viewBox="0 0 16 16" style="background-color: white;" >
+                <path d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936q-.002-.165.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.6 6.6 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z"/>
+              </svg>
+            </div>
+            <p>Lorem Ipsum</p>
+            <h3 class="fs-2 text-body-emphasis ">Business</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam dignissimos necessitatibus aut architecto,
+               saepe officiis nesciunt qui?
+               Aliquid vitae optio unde dolorum mollitia perferendis numquam corrupti natus reiciendis? Dicta, porro?</p>
+               <div class=" text-end "> 
+                <button type="button" class="btn btn-primary" style="background-color: red; border-color: red;">Loe siit</button>
+              </div>
+          </div>
+
+          <div class="feature col border p-3"  style="background-color:  rgb(14, 13, 13); ">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="blue" class="bi bi-bug-fill" viewBox="0 0 16 16" style="background-color:  rgb(14, 13, 13);" >
+                <path d="M4.978.855a.5.5 0 1 0-.956.29l.41 1.352A5 5 0 0 0 3 6h10a5 5 0 0 0-1.432-3.503l.41-1.352a.5.5 0 1 0-.956-.29l-.291.956A5 5 0 0 0 8 1a5 5 0 0 0-2.731.811l-.29-.956z"/>
+                <path d="M13 6v1H8.5v8.975A5 5 0 0 0 13 11h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 1 0 1 0v-.5a1.5 1.5 0 0 0-1.5-1.5H13V9h1.5a.5.5 0 0 0 0-1H13V7h.5A1.5 1.5 0 0 0 15 5.5V5a.5.5 0 0 0-1 0v.5a.5.5 0 0 1-.5.5zm-5.5 9.975V7H3V6h-.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 0-1 0v.5A1.5 1.5 0 0 0 2.5 7H3v1H1.5a.5.5 0 0 0 0 1H3v1h-.5A1.5 1.5 0 0 0 1 11.5v.5a.5.5 0 1 0 1 0v-.5a.5.5 0 0 1 .5-.5H3a5 5 0 0 0 4.5 4.975"/>
+              </svg>
+            </div>
+            <p class="text-white">Lorem Ipsum</p>
+            <h3 class="fs-2 text-white">Business</h3>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam dignissimos necessitatibus aut architecto,
+              saepe officiis nesciunt qui?
+              Aliquid vitae optio unde dolorum mollitia perferendis numquam corrupti natus reiciendis? Dicta, porro?</p>
+              <div class=" text-end"> 
+                <button type="button" class="btn btn-primary">Loe siit</button>
+              </div>
+          </div>
+
+          <div class="feature col border p-3">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="green" class="bi bi-taxi-front-fill" viewBox="0 0 16 16" style="background-color:white;">
+                <path d="M6 1a1 1 0 0 0-1 1v1h-.181A2.5 2.5 0 0 0 2.52 4.515l-.792 1.848a.8.8 0 0 1-.38.404c-.5.25-.855.715-.965 1.262L.05 9.708a2.5 2.5 0 0 0-.049.49v.413c0 .814.39 1.543 1 1.997V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.338c1.292.048 2.745.088 4 .088s2.708-.04 4-.088V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.892c.61-.454 1-1.183 1-1.997v-.413q0-.248-.049-.49l-.335-1.68a1.8 1.8 0 0 0-.964-1.261.8.8 0 0 1-.381-.404l-.792-1.848A2.5 2.5 0 0 0 11.181 3H11V2a1 1 0 0 0-1-1zM4.309 4h7.382a.5.5 0 0 1 .447.276l.956 1.913a.51.51 0 0 1-.497.731c-.91-.073-3.35-.17-4.597-.17s-3.688.097-4.597.17a.51.51 0 0 1-.497-.731l.956-1.913A.5.5 0 0 1 4.309 4M4 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-9 0a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1"/>
+              </svg>
+            </div>
+            <p>Lorem Ipsum</p>
+            <h3 class="fs-2 text-body-emphasis">Business</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam dignissimos necessitatibus aut architecto,
+              saepe officiis nesciunt qui?
+              Aliquid vitae optio unde dolorum mollitia perferendis numquam corrupti natus reiciendis? Dicta, porro?</p>
+              <div class=" text-end"> 
+                <button type="button" class="btn btn-primary" style="background-color: green; border-color: green; ">Loe siit</button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-3 py-3" id="featured-3">
+        <h1 class="pb-2 row justify-content-center ">Meie tehtud tööd</h1>
+        <p class="text-center">Seekord pääsen selliselt</p>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Kui klikitakse otsinguikoonile
+        $('#searchIcon').click(function(e) {
+          // Takistab lingi tavapärast toimimist
+          e.preventDefault();
+          // Kuvab ja peidab otsingukasti
+          $('#searchBox').toggle();
+        });
+      });
+    </script>
+    
+  </body>
+</html>

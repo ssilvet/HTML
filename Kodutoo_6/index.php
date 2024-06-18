@@ -12,7 +12,7 @@
     <p>Piletite üksikasjad, erinevatel SQL päringutel.</p>
 
     <?php
-    //andmebaasiga ühendamine
+    // andmebaasiga ühendamine
     $dbnimi = "localhost";
     $kasutajanimi = "root";
     $pw = "";
@@ -36,55 +36,16 @@
         echo "<h2 class='mt-5'>$description</h2>"; 
         echo "<table class='table table-striped'>"; 
         $result = $yhendus->query($sql); // teeb päringu andmebaasist
-        if ($result->num_rows > 0) { //kontrollib et vähemalt 1 rida tuli päringust tagasi
-
-            
-            if ($description != "Keskmine hinnanguline lahendusaeg tundides kõikide avatud piletite jaoks") {
-                $columns = array_keys($result->fetch_assoc()); // võtab esimese tulemuse rea veerud
-                echo "<thead><tr>"; 
-                foreach ($columns as $column) { // iga veeru nime läbikäimine ja muutmine
-                    switch ($column) {
-                        case 'id':
-                            $column = 'ID';
-                            break;
-                        case 'issue_description':
-                            $column = 'Probleemi kirjeldus';
-                            break;
-                        case 'priority':
-                            $column = 'Prioriteet';
-                            break;
-                        case 'assigned_to':
-                            $column = 'Määratud isikule';
-                            break;
-                        case 'status':
-                            $column = 'Staatus';
-                            break;
-                        case 'created_date':
-                            $column = 'Loomise kuupäev';
-                            break;
-                        case 'resolved_date':
-                            $column = 'Lahendamise kuupäev';
-                            break;
-                        case 'estimated_duration_hours':
-                            $column = 'Hinnanguline kestus (tundides)';
-                            break;
-                        case 'actual_duration_hours':
-                            $column = 'Tegelik kestus (tundides)';
-                            break;
-                        case 'category':
-                            $column = 'Kategooria';
-                            break;
-                        case 'avg_resolution_time':
-                            $column = 'Keskmine lahendusaeg (tundides)';
-                            break;
-                    }
-                    echo "<th scope='col'>$column</th>";
-                }
-                echo "</tr></thead><tbody>";
-                $result->data_seek(0); 
+        if ($result->num_rows > 0) { // kontrollib, et vähemalt 1 rida tuli päringust tagasi
+            $columns = array_keys($result->fetch_assoc()); // võtab esimese tulemuse rea veerud
+            echo "<thead><tr>";
+            foreach ($columns as $column) { // igaveeru nime läbikäimine ja kuvamine
+                echo "<th scope='col'>$column</th>";
             }
-
-            while ($row = $result->fetch_assoc()) { // käib läbi iga tulemuse rea
+            echo "</tr></thead><tbody>";
+            $result->data_seek(0); // andmete tulemus tagasi 0
+            // käib läbi iga tulemuse rea
+            while ($row = $result->fetch_assoc()) { 
                 echo "<tr>";
                 foreach ($row as $cell) { // iga lahtri väärtuse tulemuse reas läbi käimine
                     echo "<td>$cell</td>"; // kuvab iga lahtri väärtuse

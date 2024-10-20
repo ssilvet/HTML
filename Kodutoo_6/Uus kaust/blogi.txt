@@ -1,0 +1,28 @@
+<main class="container my-4 text-center" >
+            <div class="row justify-content-start">
+                <div class="mb-3 " >
+                    <h2>Uurimistöö kõrgeim vorm</h2>
+                    <p>Inimene peab uurima, sest see on avastamise kõrgeim 
+                        vorm. Probleemid näivad 150 miili kõrguselt pisikesed.</p>
+                </div>
+                <div class="mb-3">
+                    <h2>Igaühele on antud piiratud arv 
+                        südamelööke</h2>
+                    <p>Mina ei plaani ühtegi neist raisata.</p>
+                </div>
+                <div class="mb-3">
+                    <h2>Teadus pole veel selgelt nägemist valdanud</h2>
+                    <p>Me ennustame liiga palju järgmiseks aastaks, ent
+                         kaugelt liiga vähe järgmiseks kümnendiks.</p>
+                </div>
+                <div class="mb-3">
+                    <h2>Ebaõnnestumine pole variant</h2>
+                    <p>Paljud ütlevad, et uurimine on meie saatuse osa, kuid 
+                        tegelikult on see meie kohustus tulevate põlvkondade ees.</p>
+                </div>
+               
+            </div>
+            <div class="mt-4" >
+                <a href="#" class="btn btn-primary">Vanemad postitused</a>
+            </div>
+        </main>
